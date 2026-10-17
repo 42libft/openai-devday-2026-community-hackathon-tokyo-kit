@@ -1,0 +1,1 @@
+# openai-devday-2026-community-hackathon-tokyo-kit
