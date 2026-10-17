@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "blank-team-readiness-template",
+  "instruction": "記入後は適切な非公開の場所で管理。秘密情報を記入しない。",
+  "team": null,
+  "checkedAt": null,
+  "hosts": [
+    {
+      "id": "vercel",
+      "connectionVerified": null,
+      "smokeDeployed": null,
+      "intendedViewerVerified": null,
+      "updateReproduced": null,
+      "handoffAccepted": null,
+      "notes": null
+    },
+    {
+      "id": "cloudflare",
+      "connectionVerified": null,
+      "smokeDeployed": null,
+      "intendedViewerVerified": null,
+      "updateReproduced": null,
+      "handoffAccepted": null,
+      "notes": null
+    },
+    {
+      "id": "sites",
+      "connectionVerified": null,
+      "smokeDeployed": null,
+      "intendedViewerVerified": null,
+      "updateReproduced": null,
+      "handoffAccepted": null,
+      "notes": null
+    }
+  ]
+}

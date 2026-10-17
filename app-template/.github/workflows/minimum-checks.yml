@@ -1,0 +1,22 @@
+name: Scaffold checks
+'on':
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Validate scaffold only
+        run: node scripts/check-template.mjs
+      # 技術決定後、この最初のPRで実際のinstall/build/typecheckを追加。
+      # このjobだけではアプリの動作、API、deployを検証しません。

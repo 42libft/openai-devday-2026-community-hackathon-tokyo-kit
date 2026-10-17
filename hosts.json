@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "generic-hosting-guidance",
+  "title": "公開先を選ぶ・準備する",
+  "intro": "事前に各ホストの接続・中立smoke・handoffを確認。当日の作品本体は選んだ1つへ集中する。",
+  "timingNote": "開始15分で選ぶ等の時間配分は提案であり、公式規則ではない。",
+  "repoPlan": {
+    "recommendation": "本体repo＋任意の準備kit repo",
+    "main": "作品と共同作業の正本は本体repo。",
+    "kit": "必要な部品だけ小さなPRでコピーし、出典commitを残す。",
+    "avoid": "kitへの実行時依存やsubmodule化は不要。kitなしでも作品が成立する。",
+    "conflicts": "依存・lockfile・route・共通CSS・公開設定は統合担当1人を窓口にする。"
+  },
+  "hosts": [
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "suitableFor": "チームが慣れたWebフレームワークで、repoとPRを中心に作る作品。",
+      "supports": [
+        "静的サイト",
+        "対応フレームワークのサーバー処理",
+        "Git連携のpreview"
+      ],
+      "initialPreparation": [
+        "利用可能なアカウント・team/scope・権限を確認",
+        "使用するrepo/projectと公開担当を決める",
+        "中立smokeでdeploy、対象閲覧者、最小更新を確認"
+      ],
+      "collaborateToPublish": [
+        "各担当が本体repoの短いbranchで作業",
+        "PR previewと主導線を確認してmainへ統合",
+        "公開担当が採用commit・URL・更新手順をhandoff票へ記録"
+      ],
+      "cautions": [
+        "選択したscopeに必要な権限があるか確認",
+        "protected previewは一般公開確認の代わりにならない",
+        "APIや環境変数は選んだフレームワークの公式方式で設定"
+      ],
+      "sources": [
+        {
+          "title": "Deploying to Vercel",
+          "url": "https://vercel.com/docs/deployments"
+        },
+        {
+          "title": "Vite on Vercel",
+          "url": "https://vercel.com/docs/frameworks/frontend/vite"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "suitableFor": "軽いAPIと画面をまとめたい作品。静的ページだけの案も選べる。",
+      "supports": [
+        "Workers Static Assets＋必要なAPI",
+        "PagesのGit連携は静的サイトの別案"
+      ],
+      "initialPreparation": [
+        "公式dashboardでアカウントとWorkers/Pages権限を確認",
+        "使用するWorkerまたはPages projectを決める",
+        "中立smokeでdeploy、対象閲覧者、最小更新を確認"
+      ],
+      "collaborateToPublish": [
+        "本体repoを正本に、UIとAPIを分担",
+        "選んだWorkersまたはPagesの方式でbuild/outputを設定",
+        "公開担当が反映し、URLと担当範囲をhandoff票へ記録"
+      ],
+      "cautions": [
+        "CloudflareはPages必須ではない。Workersでもstatic assetsを配信できる",
+        "Workers用とPages用の設定・公開手順を混ぜない",
+        "API、secrets、WebSocket、Node互換性は別に検証"
+      ],
+      "sources": [
+        {
+          "title": "Workers Static Assets",
+          "url": "https://developers.cloudflare.com/workers/static-assets/"
+        },
+        {
+          "title": "Static Assets: Get Started",
+          "url": "https://developers.cloudflare.com/workers/static-assets/get-started/"
+        },
+        {
+          "title": "Pages Git integration",
+          "url": "https://developers.cloudflare.com/pages/get-started/git-integration/"
+        }
+      ]
+    },
+    {
+      "id": "sites",
+      "name": "ChatGPT Sites",
+      "suitableFor": "Codex App / ChatGPTから軽量Webを作り、公開担当を決めて進める作品。",
+      "supports": [
+        "軽量Web・対話的な画面",
+        "保存・公開の対応ワークフロー"
+      ],
+      "initialPreparation": [
+        "対象プラン、Site owner、一般公開の可否を確認",
+        "使用するSiteと公開担当を決める",
+        "中立smokeで保存、公開、対象閲覧者、最小更新を確認"
+      ],
+      "collaborateToPublish": [
+        "コード変更は本体repoのPRへ集約",
+        "公開担当1人が採用commitをSitesへ反映",
+        "Site上で直接直した差分は本体repoへ戻し、URLと版を記録"
+      ],
+      "cautions": [
+        "外部viewer招待は編集権限ではない",
+        "GitHub pushから自動反映される前提を置かない",
+        "connected-app利用はworkspace private Site向け。公開作品の必須条件にしない"
+      ],
+      "sources": [
+        {
+          "title": "Create a site",
+          "url": "https://learn.chatgpt.com/docs/sites/creating-a-site"
+        },
+        {
+          "title": "Creating and using ChatGPT Sites",
+          "url": "https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites"
+        },
+        {
+          "title": "Data and connections",
+          "url": "https://learn.chatgpt.com/docs/sites/data-and-connections"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0",
+  "package": "openai-devday-2026-community-hackathon-tokyo-kit",
+  "displayName": "OpenAI DevDay 2026 Community Hackathon Tokyo 準備キット（非公式）",
+  "purpose": "任意採用のUI部品・本体向け文書雛形・汎用公開手順。作品本体ではない。",
+  "reviewedAt": "2026-10-17",
+  "personalDeploymentStateIncluded": false,
+  "license": "not-specified",
+  "manifestExcludes": [
+    "PUBLIC_MANIFEST.json",
+    "SHA256SUMS"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 103,
+      "sha256": "038aa9f7b5fdf5facfae4d9c7d021e5fffda36afc5adaf7e29fc08813f04e89c"
+    },
+    {
+      "path": "BOUNDARY.md",
+      "bytes": 1112,
+      "sha256": "a537005d305d06e781be7142b3985fc2b40ab4232d8967a6a4daa05daa35558d"
+    },
+    {
+      "path": "LICENSE-NOTICE.md",
+      "bytes": 679,
+      "sha256": "42aaaed3b5854f3b3a8292ed37cf3a86c86c1db4f47c00b7012a11f571bf1db0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3937,
+      "sha256": "8418b2c34327468925c08f6e47ac45e6ae36136b9ca49a4e18b1030b436d7ac1"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 1264,
+      "sha256": "4e001de3bc68eda1a00eb2ff3828e875b448ff743aa0c60b6c674f648abd2aca"
+    },
+    {
+      "path": "app-template/.env.example",
+      "bytes": 102,
+      "sha256": "9d5f3906fe39682c0d8b5ceb9519b589acd89813e779be906de8aeae2c967b2a"
+    },
+    {
+      "path": "app-template/.github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 311,
+      "sha256": "5c5199254b56eb1f1e8feba1f7ee4bd7d3a6f18794326e3defecd8294d8ce255"
+    },
+    {
+      "path": "app-template/.github/workflows/minimum-checks.yml",
+      "bytes": 622,
+      "sha256": "a74f566d19223895288ecc5e32803ce3c611e14179964640192fa24657b1dbc9"
+    },
+    {
+      "path": "app-template/.gitignore",
+      "bytes": 76,
+      "sha256": "a58b1737fa99f95d7adf2ca5141ddf921f0835205256b7a6db4bd89d5ea73726"
+    },
+    {
+      "path": "app-template/AGENTS.md",
+      "bytes": 884,
+      "sha256": "74e026df0428554c7f4aa3728f3fb3287aba60f88040c825c2b173711770a79c"
+    },
+    {
+      "path": "app-template/CONTRIBUTING.md",
+      "bytes": 1784,
+      "sha256": "c5e8aed513034d302f7a3cd8edf1409742271684557df8859ac1e6b9df17ec71"
+    },
+    {
+      "path": "app-template/README.md",
+      "bytes": 1636,
+      "sha256": "736c1ff86ae309f1c74cbafefe5b8d7979f76427873a18d0d3ea9c6444bf5de3"
+    },
+    {
+      "path": "app-template/docs/contract.md",
+      "bytes": 518,
+      "sha256": "45bbe052aa7ac6b4c37c280a1dd9f5c477be20c8a8ae8d3945de955b504a8bf3"
+    },
+    {
+      "path": "app-template/docs/ownership.md",
+      "bytes": 723,
+      "sha256": "1da073f00208b3ca23c27f98a0cc465b3aa1ea8e28c9760beefd96a47c44959e"
+    },
+    {
+      "path": "app-template/docs/prebuilt.md",
+      "bytes": 548,
+      "sha256": "8b95a4aefc9ed3718e6ae664476027d606874ef2f01f171e95621a1f3d6dd33c"
+    },
+    {
+      "path": "app-template/scripts/check-template.mjs",
+      "bytes": 1139,
+      "sha256": "0c1356912703df0bbd0c8224404d4b13f5e4b1a251c5f56b3f6dd95f5e38d313"
+    },
+    {
+      "path": "hosting/cloudflare/README.md",
+      "bytes": 1533,
+      "sha256": "c10d83b3903058ce275f58283cbe4f0a35bf2adf89ddac2d4d33da9a8ac5e21a"
+    },
+    {
+      "path": "hosting/cloudflare/wrangler.example.json",
+      "bytes": 144,
+      "sha256": "783124b3fd5a0ec170ee7f83d1c50d77a4e9f85d1399c5286760ad745dfd7ceb"
+    },
+    {
+      "path": "hosting/handoff-template.md",
+      "bytes": 745,
+      "sha256": "d7d613308d49d53b863f5cb00acd087c4e67514d678c6aa47747a538c0092c0f"
+    },
+    {
+      "path": "hosting/sites/README.md",
+      "bytes": 1477,
+      "sha256": "62cc8a6bafee5436a45fb655f66fbd5ac015f5fd4bff1cc01944834acb0a66be"
+    },
+    {
+      "path": "hosting/vercel/README.md",
+      "bytes": 1519,
+      "sha256": "0f530091d56651bee54855fb190d0e15c13b06f8aa606facc11c0cdf7dc198e3"
+    },
+    {
+      "path": "hosts.json",
+      "bytes": 5233,
+      "sha256": "1240cb2169c207ff630b34ff96ddad44aee6bbc440b7b3ce050d0bb72a46c999"
+    },
+    {
+      "path": "kit-manifest.json",
+      "bytes": 3660,
+      "sha256": "e422d3e5a3a4df0af8cf801d03d72caf486bc044059377743de99b5e9a0a73c3"
+    },
+    {
+      "path": "kit-manifest.schema.json",
+      "bytes": 3163,
+      "sha256": "cc45f41c2508fe344bfaaa2f8cb2bcabb2d3486673715af3a88aac7e8275db27"
+    },
+    {
+      "path": "preview/index.html",
+      "bytes": 2996,
+      "sha256": "c306c3da363386b6b8a46abfb5d0dcf625f0e6ce9c5d4708e8d492de8b936206"
+    },
+    {
+      "path": "readiness-template.md",
+      "bytes": 954,
+      "sha256": "bdca03a9401382c2120ec43fa9fa40c9bcf1481984b23a119402478c70ad6be8"
+    },
+    {
+      "path": "readiness.template.json",
+      "bytes": 891,
+      "sha256": "acc4e005350e788166b9a1b64559da3fff36bc8c3d641629c170bccdf2d32814"
+    },
+    {
+      "path": "scripts/validate-kit.mjs",
+      "bytes": 2442,
+      "sha256": "28259a7fa953c57daeb012b20e2a20508c716146eec5461c4461767cadb001fe"
+    },
+    {
+      "path": "smoke-page/index.html",
+      "bytes": 991,
+      "sha256": "76faef969e4a24eabe0104675f7e9e97572728d50dc936150a2b9e6e6199b68e"
+    },
+    {
+      "path": "ui/input/component.css",
+      "bytes": 377,
+      "sha256": "63024a74aea75a80089a81e9d4fd7e5af5b4332628f3add860c04f1e6a4c8377"
+    },
+    {
+      "path": "ui/input/component.html",
+      "bytes": 334,
+      "sha256": "c9d13f3ce5cdea98e91942dc1b55e7a6b702e1e712036684ed6f4f480769742b"
+    },
+    {
+      "path": "ui/result-card/component.css",
+      "bytes": 413,
+      "sha256": "b35a8c22a9d4a835c41f3678ff454f438794c5938219fe7843aac93d0da57580"
+    },
+    {
+      "path": "ui/result-card/component.html",
+      "bytes": 332,
+      "sha256": "4fb3534e59e75df49e7cdf8cf3a9e4a891d3b62378007e208b5dc2492099970a"
+    },
+    {
+      "path": "ui/status/component.css",
+      "bytes": 408,
+      "sha256": "b75b9643e5701840a814931a93e9ed3145088e3829471d4753268d85d008333c"
+    },
+    {
+      "path": "ui/status/component.html",
+      "bytes": 359,
+      "sha256": "36c1494dcdcfc7929fee4c6720c0f4bfe31a4ec0e5704df377484518f53cc6e9"
+    },
+    {
+      "path": "ui-candidates.md",
+      "bytes": 899,
+      "sha256": "0ea021bd07840e5b46bec81c0063a7938ff47dfb4fb28065a28e1a4cadcaf9ee"
+    }
+  ]
+}

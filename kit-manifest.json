@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0",
+  "name": "openai-devday-2026-community-hackathon-tokyo-kit",
+  "preparedAt": "2026-10-17",
+  "adoption": "optional-copy-by-component",
+  "components": [
+    {
+      "id": "input",
+      "name": "入力欄",
+      "purpose": "入力を受けてアプリへ渡す",
+      "status": "local-prototype",
+      "sourceFiles": [
+        "ui/input/component.html",
+        "ui/input/component.css"
+      ],
+      "dependencies": [],
+      "framework": "none",
+      "license": {
+        "status": "owner-decision-required",
+        "spdx": null,
+        "note": "今回の新規作成。第三者コードのコピーなし。公開ライセンスは未指定。"
+      },
+      "preview": "preview/index.html#input",
+      "importSteps": [
+        "HTMLとCSSを採用する部分だけ本体へコピー",
+        "重複するHTML idを本体に合わせて変更",
+        "イベントとデータ接続は本体側で実装",
+        "出典commitと当日変更をdocs/prebuilt.mdへ記録"
+      ],
+      "removal": "当該HTML/CSSを外す。他部品への依存なし。",
+      "networkAccess": false,
+      "validated": [
+        "source-format"
+      ],
+      "notValidated": [
+        "browser-interaction",
+        "assistive-technology",
+        "application-integration"
+      ]
+    },
+    {
+      "id": "result-card",
+      "name": "結果カード",
+      "purpose": "結果1件と次の操作を表示",
+      "status": "local-prototype",
+      "sourceFiles": [
+        "ui/result-card/component.html",
+        "ui/result-card/component.css"
+      ],
+      "dependencies": [],
+      "framework": "none",
+      "license": {
+        "status": "owner-decision-required",
+        "spdx": null,
+        "note": "今回の新規作成。第三者コードのコピーなし。公開ライセンスは未指定。"
+      },
+      "preview": "preview/index.html#result-card",
+      "importSteps": [
+        "HTMLとCSSを採用する部分だけ本体へコピー",
+        "重複するHTML idを本体に合わせて変更",
+        "イベントとデータ接続は本体側で実装",
+        "出典commitと当日変更をdocs/prebuilt.mdへ記録"
+      ],
+      "removal": "当該HTML/CSSを外す。他部品への依存なし。",
+      "networkAccess": false,
+      "validated": [
+        "source-format"
+      ],
+      "notValidated": [
+        "browser-interaction",
+        "assistive-technology",
+        "application-integration"
+      ]
+    },
+    {
+      "id": "status",
+      "name": "状態表示",
+      "purpose": "処理中・空・失敗と再試行を示す",
+      "status": "local-prototype",
+      "sourceFiles": [
+        "ui/status/component.html",
+        "ui/status/component.css"
+      ],
+      "dependencies": [],
+      "framework": "none",
+      "license": {
+        "status": "owner-decision-required",
+        "spdx": null,
+        "note": "今回の新規作成。第三者コードのコピーなし。公開ライセンスは未指定。"
+      },
+      "preview": "preview/index.html#status",
+      "importSteps": [
+        "HTMLとCSSを採用する部分だけ本体へコピー",
+        "重複するHTML idを本体に合わせて変更",
+        "イベントとデータ接続は本体側で実装",
+        "出典commitと当日変更をdocs/prebuilt.mdへ記録"
+      ],
+      "removal": "当該HTML/CSSを外す。他部品への依存なし。",
+      "networkAccess": false,
+      "validated": [
+        "source-format"
+      ],
+      "notValidated": [
+        "browser-interaction",
+        "assistive-technology",
+        "application-integration"
+      ]
+    }
+  ]
+}

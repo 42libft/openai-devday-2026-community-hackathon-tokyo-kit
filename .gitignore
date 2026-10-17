@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.md
+node_modules/
+.vercel/
+.wrangler/
+.openai/
+.DS_Store
